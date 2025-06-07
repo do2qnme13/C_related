@@ -2,13 +2,10 @@
 using namespace std;
 
 int main() {
-  int width,height;
-
-  cout << "Type Width: ";
-  cin >> width;
-  cout << "Type Height: ";
-  cin >> height;
-
-  cout << "Area is " << width * height <<endl;
+   // user double instead of float for precise calculation
+    float f1 = 35e3;
+    double d1 = 12E4;
+    cout << f1 <<endl;
+    cout << d1;
   return 0;
 }
