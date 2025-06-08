@@ -1,11 +1,30 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
+
+struct Person
+  {
+    string name;
+    int age;
+    string gender;
+
+    void introduce() {
+      cout << "My name is "<<name<<". I am "<<age<<" years old"<<endl;
+    }
+
+    void getGender() {
+      cout << name << " is " << gender <<endl;
+    }
+  };
+  
+
 int main() {
-   // user double instead of float for precise calculation
-    float f1 = 35e3;
-    double d1 = 12E4;
-    cout << f1 <<endl;
-    cout << d1;
+
+  Person person1 = {"Mg Mg",12,"Male"};
+
+  person1.introduce();
+  person1.getGender();
+
   return 0;
 }
